@@ -410,41 +410,7 @@ section {
 }
 
 
-/* =====================================================
-   SCROLL INDICATOR
-===================================================== */
 
-.scroll-indicator {
-    position: absolute;
-
-    bottom: 35px;
-    left: 50%;
-
-    transform:
-        translateX(-50%);
-
-    opacity: 0.55;
-
-    animation:
-        bounce 2s infinite;
-}
-
-
-.scroll-indicator span {
-    display: block;
-
-    width: 18px;
-    height: 18px;
-
-    border-right:
-        2px solid var(--cyan);
-
-    border-bottom:
-        2px solid var(--cyan);
-
-    transform:
-        rotate(45deg);
-}
 
 
 /* =====================================================
@@ -697,34 +663,6 @@ section {
     font-size: 14px;
 
     color: #aaa;
-}
-
-
-/* =====================================================
-   PLACEHOLDER PROJEKTE
-===================================================== */
-
-.placeholder-preview {
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            135deg,
-            #203b54,
-            #08090c
-        );
-
-    transition:
-        transform 0.7s ease;
-}
-
-
-.project-card:hover
-.placeholder-preview {
-    transform:
-        scale(1.06);
 }
 
 
@@ -2158,11 +2096,7 @@ footer {
 </div>
 
 
-<div class="scroll-indicator">
 
-    <span></span>
-
-</div>
 
 
 </section>
@@ -2264,249 +2198,7 @@ footer {
 
 
 
-    <!-- =================================================
-         PROJEKT 3
-    ================================================== -->
-
-    <div
-        class="project-card reveal"
-        onclick="openProject(3)">
-
-        <div class="placeholder-preview"></div>
-
-        <div class="project-overlay">
-
-            <div class="project-number">
-                03
-            </div>
-
-            <h3>
-                Projekt 3
-            </h3>
-
-            <p>
-                Beschreibung des Projekts
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =================================================
-         PROJEKT 4
-    ================================================== -->
-
-    <div
-        class="project-card reveal"
-        onclick="openProject(4)">
-
-        <div class="placeholder-preview"></div>
-
-        <div class="project-overlay">
-
-            <div class="project-number">
-                04
-            </div>
-
-            <h3>
-                Projekt 4
-            </h3>
-
-            <p>
-                Beschreibung des Projekts
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =================================================
-         PROJEKT 5
-    ================================================== -->
-
-    <div
-        class="project-card reveal"
-        onclick="openProject(5)">
-
-        <div class="placeholder-preview"></div>
-
-        <div class="project-overlay">
-
-            <div class="project-number">
-                05
-            </div>
-
-            <h3>
-                Projekt 5
-            </h3>
-
-            <p>
-                Beschreibung des Projekts
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =================================================
-         PROJEKT 6
-    ================================================== -->
-
-    <div
-        class="project-card reveal"
-        onclick="openProject(6)">
-
-        <div class="placeholder-preview"></div>
-
-        <div class="project-overlay">
-
-            <div class="project-number">
-                06
-            </div>
-
-            <h3>
-                Projekt 6
-            </h3>
-
-            <p>
-                Beschreibung des Projekts
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =================================================
-         PROJEKT 7
-    ================================================== -->
-
-    <div
-        class="project-card reveal"
-        onclick="openProject(7)">
-
-        <div class="placeholder-preview"></div>
-
-        <div class="project-overlay">
-
-            <div class="project-number">
-                07
-            </div>
-
-            <h3>
-                Projekt 7
-            </h3>
-
-            <p>
-                Beschreibung des Projekts
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =================================================
-         PROJEKT 8
-    ================================================== -->
-
-    <div
-        class="project-card reveal"
-        onclick="openProject(8)">
-
-        <div class="placeholder-preview"></div>
-
-        <div class="project-overlay">
-
-            <div class="project-number">
-                08
-            </div>
-
-            <h3>
-                Projekt 8
-            </h3>
-
-            <p>
-                Beschreibung des Projekts
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =================================================
-         PROJEKT 9
-    ================================================== -->
-
-    <div
-        class="project-card reveal"
-        onclick="openProject(9)">
-
-        <div class="placeholder-preview"></div>
-
-        <div class="project-overlay">
-
-            <div class="project-number">
-                09
-            </div>
-
-            <h3>
-                Projekt 9
-            </h3>
-
-            <p>
-                Beschreibung des Projekts
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =================================================
-         PROJEKT 10
-    ================================================== -->
-
-    <div
-        class="project-card reveal"
-        onclick="openProject(10)">
-
-        <div class="placeholder-preview"></div>
-
-        <div class="project-overlay">
-
-            <div class="project-number">
-                10
-            </div>
-
-            <h3>
-                Projekt 10
-            </h3>
-
-            <p>
-                Beschreibung des Projekts
-            </p>
-
-        </div>
-
-    </div>
-
-
-</div>
-
-
-</section>
+    </section>
 
 <!-- =====================================================
      KONTAKT
@@ -2541,24 +2233,29 @@ footer {
 
     <form
         class="contact-form"
-        onsubmit="sendMail(event)">
+        action="https://formsubmit.co/kaleabwolde41@gmail.com"
+        method="POST">
 
         <input
             type="text"
-            id="name"
+            name="name"
             placeholder="Dein Name"
             required>
 
         <input
             type="email"
-            id="email"
+            name="email"
             placeholder="Deine E-Mail"
             required>
 
         <textarea
-            id="message"
+            name="message"
             placeholder="Deine Nachricht..."
             required></textarea>
+
+        <input type="hidden" name="_subject" value="Neue Nachricht über dein Portfolio">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
 
         <button type="submit">
 
@@ -2671,7 +2368,7 @@ footer {
             </div>
 
             <div class="skill">
-                🎤 Präsentation
+                💡 Kreativität
             </div>
 
         </div>
@@ -2707,6 +2404,10 @@ footer {
 
             <li>
                 <span>🎮 Gaming</span>
+            </li>
+            
+            <li>
+                <span>💪 Gym</span>
             </li>
 
         </ul>
@@ -3044,10 +2745,16 @@ footer {
 
         <p id="detailText">
 
-            Aurelio du bastard.
+            SOL steht für Selbständiges Organisiertes Lernen. Und genau das war auch das Ziel dieses Projektes.
 
             <br><br>
-
+            
+            Die Moral dieses Videos ist ziemlich selbsterklärend. Es geht darum, dass man die Zeit die man hat richtig nutzen sollte, sei es um seine Ziele zu erreichen 
+            einbisschen Zeit mit Freunden zu verbringen oder einfach mal auch das Leben zu geniessen. Denn die Zeit vergeht. Sie vergeht schneller als man es erwartet. 
+            Und da ich das auch selber erfahren habe, hat mich das inspiriert das Video über dieses Thema zu machen. 
+            <br><br>
+            Für dieses Projekt hatten wir etwa 3 Monate Zeit. Die Projekt auswahl war komplett frei. Ich habe mich bewusst für dieses Thema entschieden und ich bereue es gar nicht.
+            Im Gegenteil, ich bin überaus froh dass ich dieses Projekt machen durfte. Ich habe viel gelernt, nicht nur über die Videografie sondern auch über Organisation, Planung und Zeitmanagement.
             
 
         </p>
@@ -3072,9 +2779,10 @@ footer {
             <h3>Hinter dem Projekt.</h3>
 
             <p>
-                Hier kannst du später einen weiteren Text über dein
-                SOL-Projekt, deine Ideen, den Prozess oder deine
-                Erfahrungen einfügen.
+                Das Projekt alleine war nicht die einzige Aufgabe. Wir mussten das ganze auch dokumentieren und Reflektieren und das machte auch den grossteil der Note aus. 
+                Dies hat mir eine harte Lektion über Zeitmanagement und Organisation beigebracht und habe auch daraus gelernt bzw. auch stark profitieren können.
+                Diese Dokumentation bestand aus verschiedenen Teilen: Eine Einleitung, Theorie über das Thema das man gewählt hat, die Dokumentation und eine Reflexion. 
+                Das ganze gibt es im PDF und kann heruntergeladen werden.
             </p>
         </div>
 
@@ -3082,7 +2790,7 @@ footer {
 
     <div class="sol-file reveal">
         <a
-            href="SOL-Dokument.pdf"
+            href="SOL-Arbeit von Kaleab.pdf"
             download
             class="sol-file-link">
             <span>📄</span>
@@ -3678,102 +3386,25 @@ const projects = {
 
     1: {
 
-        title:
-            "SOL · Cinematic",
+    title:
+        "SOL · Cinematic",
 
-        text:
-            "Dieses Projekt entstand im Rahmen eines schulischen SOL-Projekts. Hier kommt später deine genaue Beschreibung des Projekts hin."
+    text:
+        `SOL steht für Selbständiges Organisiertes Lernen. Und genau das war auch das Ziel dieses Projektes.
 
-    },
+        <br><br>
 
+        Die Moral dieses Videos ist ziemlich selbsterklärend. Es geht darum, dass man die Zeit die man hat richtig nutzen sollte, sei es um seine Ziele zu erreichen, ein bisschen Zeit mit Freunden zu verbringen oder einfach mal auch das Leben zu geniessen. Denn die Zeit vergeht. Sie vergeht schneller als man es erwartet.
 
-    3: {
+        <br><br>
 
-        title:
-            "Projekt 3",
+        Und da ich das auch selber erfahren habe, hat mich das inspiriert das Video über dieses Thema zu machen.
 
-        text:
-            "Das ist Projekt 3. Hier kommt später dein eigener Text hin."
+        <br><br>
 
-    },
+        Für dieses Projekt hatten wir etwa 3 Monate Zeit. Die Projektauswahl war komplett frei. Ich habe mich bewusst für dieses Thema entschieden und ich bereue es gar nicht. Im Gegenteil, ich bin überaus froh dass ich dieses Projekt machen durfte. Ich habe viel gelernt, nicht nur über die Videografie sondern auch über Organisation, Planung und Zeitmanagement.`
 
-
-    4: {
-
-        title:
-            "Projekt 4",
-
-        text:
-            "Das ist Projekt 4. Hier kommt später dein eigener Text hin."
-
-    },
-
-
-    5: {
-
-        title:
-            "Projekt 5",
-
-        text:
-            "Das ist Projekt 5. Hier kommt später dein eigener Text hin."
-
-    },
-
-
-    6: {
-
-        title:
-            "Projekt 6",
-
-        text:
-            "Das ist Projekt 6. Hier kommt später dein eigener Text hin."
-
-    },
-
-
-    7: {
-
-        title:
-            "Projekt 7",
-
-        text:
-            "Das ist Projekt 7. Hier kommt später dein eigener Text hin."
-
-    },
-
-
-    8: {
-
-        title:
-            "Projekt 8",
-
-        text:
-            "Das ist Projekt 8. Hier kommt später dein eigener Text hin."
-
-    },
-
-
-    9: {
-
-        title:
-            "Projekt 9",
-
-        text:
-            "Das ist Projekt 9. Hier kommt später dein eigener Text hin."
-
-    },
-
-
-    10: {
-
-        title:
-            "Projekt 10",
-
-        text:
-            "Das ist Projekt 10. Hier kommt später dein eigener Text hin."
-
-    }
-
+},
 };
 
 
@@ -3915,60 +3546,7 @@ themeButton.addEventListener(
    KONTAKT
 ===================================================== */
 
-function sendMail(event) {
-
-    event.preventDefault();
-
-
-    const name =
-        document
-            .getElementById("name")
-            .value;
-
-
-    const email =
-        document
-            .getElementById("email")
-            .value;
-
-
-    const message =
-        document
-            .getElementById("message")
-            .value;
-
-
-    const subject =
-        encodeURIComponent(
-            "Portfolio Kontakt von " +
-            name
-        );
-
-
-    const body =
-        encodeURIComponent(
-
-            "Name: " +
-            name +
-
-            "\nE-Mail: " +
-            email +
-
-            "\n\nNachricht:\n" +
-            message
-
-        );
-
-
-    window.location.href =
-        "mailto:kaleabwolde41@gmail.com" +
-        "?subject=" +
-        subject +
-        "&body=" +
-        body;
-
-}
-
+/* Kontakt wird direkt über FormSubmit versendet. */
 
 
 /* =====================================================
